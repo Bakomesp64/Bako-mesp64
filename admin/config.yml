@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: Bakomesp64/Bako-mesp64
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "pronostics"
+    label: "Pronostics"
+    files:
+      - file: "pronostics.json"
+        label: "Pronostics du jour"
+        name: "pronostics"
+        fields:
+          - {label: "Match", name: "match", widget: "string"}
+          - {label: "Pronostic", name: "pronostic", widget: "string"}
+
+  - name: "resultats"
+    label: "Résultats"
+    files:
+      - file: "resultats.json"
+        label: "Résultats sportifs"
+        name: "resultats"
+        fields:
+          - {label: "Date", name: "date", widget: "string"}
+          - {label: "Événement", name: "evenement", widget: "string"}
+          - {label: "Résultat", name: "resultat", widget: "string"}
